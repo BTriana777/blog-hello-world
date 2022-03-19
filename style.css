@@ -31,3 +31,64 @@ header span{
 header:hover{
     background-color: rgb(101, 167, 99);
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+}
+footer:hover{
+    animation: animation-background 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: blur(0.5px);
+
+}
+footer span{
+    margin-left: 10px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+@keyframes animation-background {
+
+    0%{
+        background-color: #ff0000;
+    } 
+    10%{
+        background-color: #ff9a00;
+    }
+    20%{
+        background-color: #d0de21;
+    }
+    30%{
+        background-color: #4fdc4a;
+    } 
+    40%{
+        background-color: #3fdad8;
+    }
+    50%{
+        background-color: #2fc9e2;
+    } 
+    60%{
+        background-color: #1c7fee;
+    } 
+    70%{
+        background-color: #5f15f2;
+    } 
+    80%{
+        background-color: #ba0cf8;
+    } 
+    90%{
+        background-color: #fb07d9;
+    } 
+    100%{
+        background-color: #ff0000;
+    }
+}
